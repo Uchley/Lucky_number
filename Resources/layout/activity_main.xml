@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30sp"
+        android:textSize="144sp"/>
+
+    <TextView
+        android:id="@+id/rangeTextView"
+        android:text="Choose your range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultTextView"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="289.0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rangeTextView"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"
+        android:max="10"
+        android:progress="3" />
+
+    <Button
+        android:id="@+id/rollButton"
+        android:text="Roll"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginTop="30sp"/>
+
+</RelativeLayout>
